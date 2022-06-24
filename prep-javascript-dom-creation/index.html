@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript DOM Creation</title>
+</head>
+<body>
+  <div id="container">
+
+  </div>
+  <script>
+    // Your code here
+    // create $container variable to reference container div
+    var $container = document.querySelector('#container');
+    console.log($container);
+
+    // create h1 element and assign it to $heading
+    const $heading = document.createElement('h1');
+    console.log($heading);
+
+    // create text node and append it to $heading
+    const newContent = document.createTextNode('Hello World!');
+    $heading.appendChild(newContent);
+    console.log($heading);
+
+    // append $heading as a child of $container
+    $container.appendChild($heading);
+  </script>
+</body>
+</html>
